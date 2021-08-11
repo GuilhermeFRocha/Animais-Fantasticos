@@ -12,6 +12,10 @@ ul {
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #faf6ed;
   color: #222;
@@ -55,6 +59,10 @@ body {
   grid-template-columns: 90px 300px 1fr;
   grid-gap: 20px;
   margin-bottom: 4rem;
+}
+
+.blue {
+  background: #222;
 }
 
 .titulo {
@@ -217,3 +225,4 @@ body {
     margin-bottom: 0px;
   }
 }
+

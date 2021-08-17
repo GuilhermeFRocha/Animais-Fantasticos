@@ -12,7 +12,8 @@ function initTabNav() {
         section.classList.remove('ativo')
       })
 
-      tabcontent[index].classList.add('ativo')
+      const direcao = tabcontent[index].dataset.anime;
+      tabcontent[index].classList.add('ativo' , direcao)
     }
 
     tabmenu.forEach((itemMenu, index) => {
@@ -86,15 +87,16 @@ function initAnimacaoScroll() {
         const sectionTop = section.getBoundingClientRect().top;
         const isSectionVisible = (sectionTop - windowMetade) < 0;
 
-        if (isSectionVisible) 
+        if (isSectionVisible)
           section.classList.add('ativo')
-         else 
+        else
           section.classList.remove('ativo')
       })
     }
-  }
-  animaScroll()
 
-  window.addEventListener('scroll', animaScroll)
+    animaScroll()
+    window.addEventListener('scroll', animaScroll)
+  }
 }
 initAnimacaoScroll()
+

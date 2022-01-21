@@ -36,12 +36,4 @@ export default class DropdownMenu  {
     }
     return this;
   }
-
-  //Forma Alternativa
-  // dropdownMenus.forEach(menu =>{
-  //   ['click', 'touchstart'].forEach(userEvent=>{
-  //     menu.addEventListener(userEvent, handleClick)
-  //   })
-  // })
-
 }
